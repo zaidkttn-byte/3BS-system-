@@ -8,7 +8,7 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['crew'])
 def send_crew(message):
-    bot.reply_to(message, "👨‍💻 طاقم البث والعمل:\n\n🎙 دردش وهلالي: حالياً لعبة تختيم + أزار\n🎮 حمادة: جراند مدينة العدالة\n👑 عبسي: كاونتر سترايك + فيلم + جراند")
+    bot.reply_to(message, "👨‍💻 طاقم البث والعمل:\n\n🎙 دردس وهلالي: حالياً لعبة تختيم + أزار\n🎮 حمادة: جراند مدينة العدالة\n👑 عبسي: كاونتر سترايك + فيلم + جراند")
 
 @bot.message_handler(commands=['events'])
 def send_events(message):

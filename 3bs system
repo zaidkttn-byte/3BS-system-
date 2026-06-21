@@ -1,0 +1,27 @@
+# 3BS-system-
+import telebot
+
+bot = telebot.TeleBot("8912908132:AAFchtsmAn-EIM3Co7kro8kCpLgEJfrT3ZA")
+
+@bot.message_handler(commands=['start'])
+def send_welcome(message):
+    bot.reply_to(message, "أهلاً وسهلاً فيك في نظام عبسي | Absi ✨\n\nاختر من القائمة ما يناسبك.\nشكراً لتواجدك هنا! 🔥")
+
+@bot.message_handler(commands=['crew'])
+def send_crew(message):
+    bot.reply_to(message, "👨‍💻 طاقم البث والعمل:\n\n🎙 دردش وهلالي: حالياً لعبة تختيم + أزار\n🎮 حمادة: جراند مدينة العدالة\n👑 عبسي: كاونتر سترايك + فيلم + جراند")
+
+@bot.message_handler(commands=['events'])
+def send_events(message):
+    bot.reply_to(message, "📅 الفعاليات القادمة:\n\nحالياً لا يوجد شيء محدد، خليك قريب عشان ما يفوتك أي جديد! 😉")
+
+@bot.message_handler(commands=['social'])
+def send_social(message):
+    bot.reply_to(message, "📱 حسابات التواصل الرسمية:\n\n🎥 كيك (Kick): https://kick.com/absi\n🐦 X: x.com/absi_151\n📸 انستغرام: instagram.com/hanialqablan\n📺 يوتيوب: youtube.com/@3ABSI2\n💬 ديسكورد: discord.gg/ABSI\n🎵 تيك توك: tiktok.com/@3absi1999\n📘 فيسبوك: facebook.com/3ABSI2")
+
+@bot.message_handler(commands=['support'])
+def send_support(message):
+    bot.reply_to(message, "🛠 للدعم الفني:\nتواصل مع: @Zaid_Qattan")
+
+print("Bot is running...")
+bot.infinity_polling()

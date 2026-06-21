@@ -22,5 +22,9 @@ def send_social(message):
 def send_support(message):
     bot.reply_to(message, "🛠 للدعم الفني:\nتواصل مع: @Zaid_Qattan")
 
+@bot.message_handler(commands=['live'])
+def send_live_status(message):
+    bot.reply_to(message, "🟢 احنا معكم في ثابثون ستين_عالسكرين، تعالو حياكم الله!")
+
 print("Bot is running...")
 bot.infinity_polling()
